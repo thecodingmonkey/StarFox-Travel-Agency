@@ -2278,13 +2278,21 @@ nav {
       float: right;
       background-color: red; } }
   @media only screen and (min-width: 640px) {
+    nav ul {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: auto;
+      margin-right: auto; }
     nav li {
       display: inline-block;
+      font-size: 18px;
       padding-left: 10px;
       padding-right: 20px;
-      color: white; }
+      color: #8EC1C1; }
     nav li:hover {
-      color: red; } }
+      color: white; } }
 
 .slogan_ufo, .slogan_ufo2 {
   background-image: url("/images/ship.png");
@@ -2301,7 +2309,7 @@ nav {
   width: 160px;
   background-size: 160px 160px; }
 
-slogan .button.round {
+slogan .label.radius {
   background-color: #8EC1C1;
   border-radius: 5px; }
 slogan .slogan {
@@ -2382,3 +2390,9 @@ slogan .more_info {
   .sub_product p {
     padding-top: 20px;
     color: white; }
+
+footer {
+  padding-top: 20px;
+  text-align: center;
+  background-color: #262626;
+  color: #535353; }

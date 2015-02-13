@@ -11,6 +11,7 @@ $large-only: "only screen and (min-width:961px)";
 
 $dark-gray : #262626;
 $medium-gray : #535353;
+
 $light-teal : #8EC1C1;
 
 $radius-button-width : 95%;
@@ -71,7 +72,6 @@ logo {
 
 nav {
   background-color: $dark-gray;
-//  color: white;
 
   @media #{$small-only} {
     .menu_button {
@@ -81,16 +81,28 @@ nav {
   }
 
   @media #{$medium-up} {
-  
+      ul {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       li {
         display: inline-block;
+        font-size: 18px;
         padding-left: 10px;
         padding-right: 20px;
-        color: white;
+        color: $light-teal;
+        // font-weight: 400;
       }
 
       li:hover {
-        color: red;
+        color: white;
+        // font-weight: bold;
       }
 
   }
@@ -119,7 +131,7 @@ nav {
 }
 
 slogan {
-  .button.round {
+  .label.radius {
     background-color: $light-teal;
     border-radius: 5px;
   }
@@ -232,4 +244,12 @@ slogan {
     padding-top: 20px;
     color: white; 
   }
+}
+
+footer {
+  padding-top: 20px;
+
+  text-align: center;
+  background-color: $dark-gray;
+  color: $medium-gray;
 }
