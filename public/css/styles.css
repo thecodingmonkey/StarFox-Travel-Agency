@@ -2248,7 +2248,8 @@ body {
       background-color: white; } }
 
 logo {
-  padding-top: 10px; }
+  padding-top: 10px;
+  text-align: center; }
   @media only screen and (max-width:640px) {
     logo .top_header {
       background-color: #262626; }
@@ -2262,14 +2263,28 @@ logo {
       font-size: 32px; }
     logo .ita {
       display: none; } }
+  @media only screen and (min-width:961px) {
+    logo .top_header {
+      height: 200px;
+      background-image: url("/images/header_bg.png");
+      background-repeat: background-repeat;
+      background-color: #8EC1C1; } }
   logo .top_logo_img {
     background-image: url("/images/logo.png");
-    height: 50px;
-    width: 50px;
-    background-size: 50px 50px;
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block; }
+    @media only screen and (max-width:640px) {
+      logo .top_logo_img {
+        height: 50px;
+        width: 50px;
+        background-size: 50px 50px; } }
+    @media only screen and (min-width:961px) {
+      logo .top_logo_img {
+        height: 150px;
+        width: 200px;
+        background-size: 200px 200px;
+        background-position: center; } }
 
 nav {
   background-color: #262626; }

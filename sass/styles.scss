@@ -55,14 +55,33 @@ logo {
     }
   }
 
+  @media #{$large-only} {
+    
+    .top_header {
+      height: 200px;
+      background-image: url("/images/header_bg.png");
+      background-repeat: background-repeat;
+      background-color: $light-teal;
+    }
+  }
 
   padding-top: 10px;
+  text-align: center;
 
   .top_logo_img {
     background-image: url("/images/logo.png");
-    height: 50px;
-    width: 50px;
-    background-size: 50px 50px;
+    @media #{$small-only} {
+      height: 50px;
+      width: 50px;
+      background-size: 50px 50px;
+    }
+
+    @media #{$large-only} {
+      height: 150px;
+      width: 200px;
+      background-size: 200px 200px;
+      background-position: center;
+    }
     background-repeat: no-repeat;
     background-position: center;
 
