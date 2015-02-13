@@ -11,27 +11,23 @@ $large-only: "only screen and (min-width:961px)";
 
 $dark-gray : #262626;
 $medium-gray : #535353;
-
 $light-teal : #8EC1C1;
+
+$radius-button-width : 95%;
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: $light-teal;
+  @media #{$medium-down} {
+    background-color: $light-teal;
+  }
 
-
+  @media #{$large-only} {
+    background-color: white;
+  }
 }
 
 div.content {
-  max-width: 900px;
-}
-
-div.row {
-  // border: 1px solid black;
-
-}
-
-div.row:nth-child(1) {
-//  background-color: blue;  
+  // max-width: 900px;
 }
 
 logo {
@@ -74,24 +70,27 @@ logo {
 }
 
 nav {
-  @media #{$small-only} {
-    display: none;
-  
-    menu_button {
-      display: block;
-    }
+  background-color: $dark-gray;
+//  color: white;
 
+  @media #{$small-only} {
+    .menu_button {
+      float: right;
+      background-color: red;
+    }
   }
 
   @media #{$medium-up} {
-      menu_button {
-        display: none;
-      }
   
       li {
         display: inline-block;
         padding-left: 10px;
         padding-right: 20px;
+        color: white;
+      }
+
+      li:hover {
+        color: red;
       }
 
   }
@@ -99,19 +98,32 @@ nav {
 
 }
 
-slogan {
-//  background-color: blue;
-  .slogan_ufo {
-    background-image: url("/images/ship.png");
-    height: 300px;
-    width: 500px;
-    background-size: 500px 500px;
-    background-repeat: no-repeat;
-    background-position: center;
+.slogan_ufo {
+  background-image: url("/images/ship.png");
+  height: 300px;
+  width: 500px;
+  background-size: 500px 500px;
+  background-repeat: no-repeat;
+  background-position: center;
 
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slogan_ufo2 {
+  @extend .slogan_ufo;
+
+  height: 100px;
+  width: 160px;
+  background-size: 160px 160px;
+}
+
+slogan {
+  .button.round {
+    background-color: $light-teal;
+    border-radius: 5px;
   }
+
   .slogan {
     text-align: center;
     font-size: 28px;
@@ -141,18 +153,17 @@ slogan {
 }
 
 .product {
-//  background-color: $dark_gray;
-  // margin-left: 70px;
-  // margin-right: 70px;
   margin-bottom: 20px;
 
-  margin-left: 0;
-  margin-right: 0;
-
   .radius.button {
+    width: $radius-button-width;
+
     border-radius: 20px;
     background-color: $medium-gray;
+    margin-left: 0;
+    margin-right: 0;
   }
+
   .radius.button:hover {
     background-color: $dark-gray;
   }
@@ -178,6 +189,47 @@ slogan {
     padding-top: 50px;
     padding-left: 25%;
     padding-right: 25%;
+    color: white; 
+  }
+}
+
+.sub_product {
+  margin-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+
+
+  .radius.button {
+    width: $radius-button-width;
+    border-radius: 20px;
+    background-color: $medium-gray;
+  }
+
+  .radius.button:hover {
+    background-color: $dark-gray;
+  }
+
+  h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  h3 {
+    display: inline;
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+    border-bottom: 4px solid white;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p {
+    padding-top: 20px;
     color: white; 
   }
 }
