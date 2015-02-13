@@ -2245,9 +2245,6 @@ body {
 div.content {
   max-width: 900px; }
 
-div.row {
-  border: 1px solid black; }
-
 logo {
   padding-top: 10px; }
   @media only screen and (max-width:640px) {
@@ -2303,7 +2300,7 @@ slogan .slogan {
   slogan .slogan span {
     font-weight: 600; }
 slogan .more_info {
-  background-color: red;
+  background-color: #535353;
   text-align: center;
   margin: 0 70px 30px 70px;
   padding-top: 20px;
@@ -2312,19 +2309,33 @@ slogan .more_info {
   font-weight: 200;
   font-size: 24px; }
 
+.row .product {
+  background-color: white; }
+
 .product {
-  background-color: #333;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0; }
+  .product .radius.button {
+    border-radius: 20px;
+    background-color: #535353; }
+  .product .radius.button:hover {
+    background-color: #262626; }
   .product h2 {
     color: white;
     font-size: 24px;
     font-weight: 700;
     text-align: center; }
   .product h3 {
+    display: inline;
     color: white;
     font-size: 60px;
     font-weight: 200;
     text-align: center;
-    text-decoration: underline; }
+    border-bottom: 8px solid white;
+    padding-bottom: 10px; }
   .product p {
+    padding-top: 50px;
+    padding-left: 25%;
+    padding-right: 25%;
     color: white; }
