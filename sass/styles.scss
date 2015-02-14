@@ -32,98 +32,67 @@ div.content {
 }
 
 header {
-  @media #{$small-only} {
+  @media #{$medium-up} {
     display: inline;
     text-align: left;
-    .top_header {
-      background-color: $dark-gray;
-    }
-
-    .menu_button {
-      float: right;
-      background-color: red;
-    }
-
-    logo {
-
-      font-size: 32px;
-
-      p {
-        display: block;
-
-        margin-top: 0px;
-        .star, .fox {
-          font-weight: bold;
-        }
+    h1 {
+      a {
+        text-decoration: none;
       }
+    }
 
+    .top_logo_img {
+      background-image: url("/images/logo-white.png");
       @media #{$small-only} {
-        text-align: left;
-        .top_header {
-          background-color: $dark-gray;
-        }
+        height: 50px;
+        width: 50px;
 
-        .top_logo_img {
-          display: inline-block;
-        }
+        background-size: 50px 50px;
+      }
+    }
 
-        p {
-          display: inline-block;
-        }
+    font-size: 32px;
 
-        .star {
-          color: $light-teal;
-          font-weight: 700;
-          font-size: 32px;
-        }
+    p {
+      display: block;
 
-        .fox {
-          color: $light-teal;
-          font-weight: 400;
-          font-size: 32px;
-        }
+      margin-top: 0px;
+      .star, .fox {
+        font-weight: bold;
+      }
+    }
 
-        .ita {
-          display: none;
-        }
+    .top_header {
+      height: 200px;
+      background-image: url("/images/header_bg.png");
+      background-repeat: background-repeat;
+      background-color: $light-teal;
+    }
+
+    padding-top: 10px;
+    text-align: center;
+
+    .top_logo_img {
+      background-image: url("/images/logo-white.png");
+      @media #{$small-only} {
+        height: 50px;
+        width: 50px;
+
+        background-size: 50px 50px;
       }
 
       @media #{$medium-up} {
+        height: 100px;
+        width: 200px;
 
-        .top_header {
-          height: 200px;
-          background-image: url("/images/header_bg.png");
-          background-repeat: background-repeat;
-          background-color: $light-teal;
-        }
-      }
-
-      padding-top: 10px;
-      text-align: center;
-
-      .top_logo_img {
-        background-image: url("/images/logo-white.png");
-        @media #{$small-only} {
-          height: 50px;
-          width: 50px;
-
-          background-size: 50px 50px;
-        }
-
-        @media #{$medium-up} {
-          height: 100px;
-          width: 200px;
-
-          background-size: 200px 200px;
-          background-position: center;
-        }
-        background-repeat: no-repeat;
+        background-size: 200px 200px;
         background-position: center;
-
-        display: inline-block;
       }
-    }
+      background-repeat: no-repeat;
+      background-position: center;
 
+      display: inline-block;
+    }
   }
 }
 
