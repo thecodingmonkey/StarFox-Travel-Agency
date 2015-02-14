@@ -38,8 +38,7 @@ div.content {
 header {
   @media #{$small-only} {
     $topbar-link-color-hover: $white;
-      color: $light-teal;
-    }
+    color: $light-teal;
   }
 
   @media #{$medium-up} {
@@ -94,6 +93,7 @@ header {
       display: inline-block;
     }
   }
+}
 
 nav {
   background-color: $dark-gray;

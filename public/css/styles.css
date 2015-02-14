@@ -2250,41 +2250,41 @@ body {
 @media only screen and (max-width:640px) {
   header {
     color: #8EC1C1; } }
-
 @media only screen and (min-width: 640px) {
-  display: inline;
-  text-align: left;
-  h1 a {
-    text-decoration: none; }
-  font-size: 32px;
-  p {
-    display: block;
-    margin-top: 0px; }
-    p .star, p .fox {
-      font-weight: bold; }
-  .top_header {
-    height: 200px;
-    background-image: url("/images/header_bg.png");
-    background-repeat: background-repeat;
-    background-color: #8EC1C1; }
-  padding-top: 10px;
-  text-align: center;
-  .top_logo_img {
-    background-image: url("/images/logo-white.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block; }
-    @media only screen and (max-width:640px) {
-      .top_logo_img {
-        height: 50px;
-        width: 50px;
-        background-size: 50px 50px; } }
-    @media only screen and (min-width: 640px) {
-      .top_logo_img {
-        height: 100px;
-        width: 200px;
-        background-size: 200px 200px;
-        background-position: center; } } }
+  header {
+    display: inline;
+    text-align: left;
+    font-size: 32px;
+    padding-top: 10px;
+    text-align: center; }
+    header h1 a {
+      text-decoration: none; }
+    header p {
+      display: block;
+      margin-top: 0px; }
+      header p .star, header p .fox {
+        font-weight: bold; }
+    header .top_header {
+      height: 200px;
+      background-image: url("/images/header_bg.png");
+      background-repeat: background-repeat;
+      background-color: #8EC1C1; }
+    header .top_logo_img {
+      background-image: url("/images/logo-white.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      display: inline-block; }
+      @media only screen and (max-width:640px) {
+        header .top_logo_img {
+          height: 50px;
+          width: 50px;
+          background-size: 50px 50px; } }
+      @media only screen and (min-width: 640px) {
+        header .top_logo_img {
+          height: 100px;
+          width: 200px;
+          background-size: 200px 200px;
+          background-position: center; } } }
 
 nav {
   background-color: #262626;
