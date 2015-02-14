@@ -16,6 +16,10 @@ $light-teal : #8EC1C1;
 
 $radius-button-width : 95%;
 
+.top-bar {
+
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   @media #{$medium-down} {
@@ -32,22 +36,18 @@ div.content {
 }
 
 header {
+  @media #{$small-only} {
+    $topbar-link-color-hover: $white;
+      color: $light-teal;
+    }
+  }
+
   @media #{$medium-up} {
     display: inline;
     text-align: left;
     h1 {
       a {
         text-decoration: none;
-      }
-    }
-
-    .top_logo_img {
-      background-image: url("/images/logo-white.png");
-      @media #{$small-only} {
-        height: 50px;
-        width: 50px;
-
-        background-size: 50px 50px;
       }
     }
 
@@ -94,7 +94,6 @@ header {
       display: inline-block;
     }
   }
-}
 
 nav {
   background-color: $dark-gray;
