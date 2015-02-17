@@ -2248,6 +2248,15 @@ th.hide-for-touch {
     font-size: 24px; }
     .top-bar .title-area .name h1 span {
       font-size: 24px; }
+  .top-bar section.top-bar-section li {
+    border-top: 2px solid #8EC1C1;
+    text-align: left;
+    padding-left: 20px; }
+    .top-bar section.top-bar-section li a {
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: lighter;
+      color: #8EC1C1; }
 
 body {
   font-family: "Open Sans", sans-serif; }
@@ -2370,9 +2379,16 @@ slogan .more_info {
 
 .row .product {
   padding-top: 60px;
-  background-color: white;
-  padding-left: 60px;
-  padding-right: 60px; }
+  background-color: white; }
+  @media only screen and (max-width:640px) {
+    .row .product {
+      padding-left: 60px;
+      padding-right: 60px; } }
+  @media only screen and (min-width:640px) and (max-width: 960px) {
+    .row .product .product_med_leftcol, .row .product .product_med_rightcol {
+      margin-top: 20px;
+      box-sizing: border-box;
+      vertical-align: middle; } }
   .row .product .radius.button {
     width: 95%;
     border-radius: 5px;
@@ -2384,11 +2400,17 @@ slogan .more_info {
   .row .product .product_title {
     width: 100%;
     border-bottom: 1px black solid; }
+    @media only screen and (min-width:640px) and (max-width: 960px) {
+      .row .product .product_title {
+        border-bottom: 0px; } }
   .row .product h2 {
     color: white;
     font-size: 24px;
     font-weight: 700;
     text-align: center; }
+    @media only screen and (min-width:640px) and (max-width: 960px) {
+      .row .product h2 {
+        text-align: left; } }
   .row .product h3 {
     display: inline;
     color: white;
@@ -2402,14 +2424,24 @@ slogan .more_info {
     padding-left: 25%;
     padding-right: 25%;
     color: white; }
+    @media only screen and (min-width:961px) {
+      .row .product p {
+        padding-left: 0;
+        padding-right: 0; } }
+    @media only screen and (min-width:640px) and (max-width: 960px) {
+      .row .product p {
+        text-align: left;
+        padding-left: 0%;
+        padding-top: 10px; } }
 
 .sub_product {
+  padding-top: 60px;
   margin-bottom: 20px;
   padding-left: 0;
   padding-right: 0; }
   .sub_product .radius.button {
     width: 95%;
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: #535353; }
   .sub_product .radius.button:hover {
     background-color: #262626; }
@@ -2431,6 +2463,8 @@ slogan .more_info {
   .sub_product p {
     padding-top: 20px;
     color: white; }
+  .sub_product .more_deals_inside {
+    font-size: 24px; }
 
 footer {
   padding-top: 20px;
