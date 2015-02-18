@@ -242,7 +242,7 @@ slogan {
 
 }
 
-.row:nth-child(1) {
+.row:first-child, .row:last-child {
   max-width: none;
 }
 
@@ -266,6 +266,14 @@ slogan {
 
     .product_med_leftcol {
       text-align: center;
+    }
+
+    .product_med_rightcol {
+      padding-left: 20px;
+      border-left: 2px $lightest-gray groove;
+      border-color: $lightest-gray;
+      padding-top: 20px;
+      margin-top: 0;
     }
 //  }
 
@@ -399,12 +407,15 @@ slogan {
 footer {
   padding-top: 20px;
   @media #{$small-only} {
-    padding-top: 0px;
+    padding-top: 25px;
   }
 
 
   .more_deals {
     background-color: $light-teal;
+    // @media #{$small-only} {
+    //   background-color: #fff
+    // }
     margin-top: 25px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -421,9 +432,8 @@ footer {
     background-color: $dark-gray;
   }
   text-align: center;
-  background-color: $dark-gray;
-  @media #{$medium-only} {
-    background-color: #fff;
-  }
+//  background-color: $dark-gray;
+
+  background-color: #fff;
   color: $light-gray;
 }
