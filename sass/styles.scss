@@ -18,12 +18,24 @@ $light-teal : #8EC1C1;
 
 $radius-button-width : 95%;
 
+// Divider Styles
+$topbar-divider-border-bottom: solid 1px scale-color($light-teal, $lightness: 13%);
+$topbar-divider-border-top: solid 1px scale-color($light-teal, $lightness: -50%);
+$topbar-dropdown-toggle-size: 0px;
 
 // only applies to small size
-.top-bar {
+.top-bar.expanded .title-area {
+  height: 65px;
+//  padding-top: 10px;
+  padding-bottom: 20px;
+  border: 0;
+}
+
+.top-bar, .top-bar {
+  height: 65px;
   padding-top: 10px;
   padding-bottom: 20px;
-  height: 65px;
+  border-radius: 0;
 
   .title-area {
     .toggle-topbar {
@@ -42,7 +54,7 @@ $radius-button-width : 95%;
 
   section.top-bar-section {
     li {
-      border-top: 2px solid $light-teal;
+//      border-top: 2px solid $light-teal;
       text-align: left;
       padding-left: 20px;
       a {
@@ -213,6 +225,7 @@ slogan {
       padding-right: 60px;
       margin-left: 0;
       margin-right: 0;
+
     }
   }
 
@@ -238,7 +251,10 @@ slogan {
       margin: 0 60px 30px 0px;
     }
     @media #{$medium-only} {
-      margin: 0 60px 30px 60px;
+      margin: 0 0px 30px 0px;
+      width: 100%;
+      padding-left: auto;
+      padding-right: auto;
     }
     @media #{$small-only} {
       margin-left: auto;
@@ -257,6 +273,11 @@ slogan {
 
 .row:first-child, .row:last-child {
   max-width: none;
+}
+
+.row:nth-child(3) .row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .row .product {
