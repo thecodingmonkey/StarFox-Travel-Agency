@@ -364,10 +364,6 @@ slogan {
     text-align: center;
   }
 
-  .product-box:hover {
-    background-color: $medium-gray;
-  }
-
   h2 {
     color: white;
     font-size: 20px;
@@ -394,12 +390,20 @@ slogan {
 
   p {
 //    padding-top: 20px;
-    padding-bottom: 5px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 24px;
+    padding-bottom: 30px;
     color: white; 
+  }
+
+  p:hover {
+    background-color: $medium-gray;
   }
 
   .more_deals_inside {
     font-size: 24px;
+    padding-bottom: 15px;
 //    border-top: 1px solid black;
   }
 }

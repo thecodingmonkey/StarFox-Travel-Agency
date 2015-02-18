@@ -2470,8 +2470,6 @@ slogan .more_info {
     border-radius: 5px;
     background-color: #535353;
     text-align: center; }
-  .sub_product .product-box:hover {
-    background-color: #343434; }
   .sub_product h2 {
     color: white;
     font-size: 20px;
@@ -2493,10 +2491,16 @@ slogan .more_info {
     margin-left: auto;
     margin-right: auto; }
   .sub_product p {
-    padding-bottom: 5px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 24px;
+    padding-bottom: 30px;
     color: white; }
+  .sub_product p:hover {
+    background-color: #343434; }
   .sub_product .more_deals_inside {
-    font-size: 24px; }
+    font-size: 24px;
+    padding-bottom: 15px; }
 
 footer {
   padding-top: 20px;
