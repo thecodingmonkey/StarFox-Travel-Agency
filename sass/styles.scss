@@ -10,7 +10,8 @@ $medium-up: "only screen and (min-width: 640px)";
 $large-only: "only screen and (min-width:961px)";
 
 $dark-gray : #262626;
-$medium-gray : #535353;
+$medium-gray : #343434;
+$light-gray : #535353;
 
 $light-teal : #8EC1C1;
 
@@ -72,7 +73,6 @@ div.content {
 
 header {
   @media #{$small-only} {
-//    $topbar-link-color-hover: $white;
     color: $light-teal;
 
     margin-top: 5px;
@@ -219,7 +219,7 @@ slogan {
   }
 
   .more_info {
-    background-color: $medium-gray;
+    background-color: $light-gray;
     text-align: center;
     margin: 0 60px 30px 60px;
     padding-top: 20px;
@@ -243,7 +243,6 @@ slogan {
 
   @media #{$medium-only} {
     .product_med_leftcol, .product_med_rightcol {
-//      min-height: 225px;
       margin-top: 20px;
       box-sizing: border-box;
       vertical-align: middle;
@@ -254,18 +253,18 @@ slogan {
     width: $radius-button-width;
 
     border-radius: 5px;
-    background-color: $medium-gray;
+    background-color: $light-gray;
     margin-left: 0;
     margin-right: 0;
   }
 
   .radius.button:hover {
-    background-color: $dark-gray;
+    background-color: $medium-gray;
   }
 
   .product_title {
     width: 100%;
-    border-bottom: 1px black solid;
+    border-bottom: 1px #434343 solid;
     @media #{$medium-only} {
       border-bottom: 0px;
     }
@@ -320,7 +319,7 @@ slogan {
   .radius.button {
     width: $radius-button-width;
     border-radius: 5px;
-    background-color: $medium-gray;
+    background-color: $light-gray;
   }
 
   .radius.button:hover {
@@ -371,7 +370,13 @@ footer {
     font-weight: 600;
   }
 
+  .copyright {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
   text-align: center;
   background-color: $dark-gray;
-  color: $medium-gray;
+  color: $light-gray;
 }
