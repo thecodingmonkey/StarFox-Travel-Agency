@@ -2503,6 +2503,7 @@ footer {
   footer .more_deals {
     background-color: #8EC1C1;
     margin-top: 25px;
+    padding-top: 5px;
     padding-bottom: 5px;
     color: white;
     font-size: 24px;
@@ -2511,4 +2512,8 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20%;
-    padding-right: 20%; }
+    padding-right: 20%;
+    background-color: #262626; }
+  @media only screen and (min-width:640px) and (max-width: 960px) {
+    footer {
+      background-color: #fff; } }

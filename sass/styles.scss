@@ -406,6 +406,7 @@ footer {
   .more_deals {
     background-color: $light-teal;
     margin-top: 25px;
+    padding-top: 5px;
     padding-bottom: 5px;
     color: white;
     font-size: 24px;
@@ -417,8 +418,12 @@ footer {
     padding-bottom: 20px;
     padding-left: 20%;
     padding-right: 20%;
+    background-color: $dark-gray;
   }
   text-align: center;
   background-color: $dark-gray;
+  @media #{$medium-only} {
+    background-color: #fff;
+  }
   color: $light-gray;
 }
