@@ -157,8 +157,8 @@ $include-html-global-classes: $include-html-classes;
 $small-range: (0em, 640px);
 $medium-range: (641px, 960px);
 $large-range: (961px, 9999990em);
-// $xlarge-range: (90.063em, 120em);
-// $xxlarge-range: (120.063em, 99999999em);
+$xlarge-range: (9999990.063em, 9999991em);
+$xxlarge-range: (9999992.063em, 99999999em);
 
 // $screen: "only screen";
 

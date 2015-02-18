@@ -279,15 +279,18 @@ slogan {
   margin-right: 0;
 }
 
-div.product.columns:first-child {
-  padding-left: 0;
-  padding-right: 30px;
+@media #{$large-only} {
+  div.product.columns:first-child {
+    padding-left: 0;
+    padding-right: 30px;
+  }
+
+  div.sub_product {
+    padding-left: 30px;
+    padding-right: 0;
+  }
 }
 
-div.sub_product {
-  padding-left: 30px;
-  padding-right: 0;
-}
 
 .row .product {
   padding-top: 60px;
@@ -451,7 +454,7 @@ div.sub_product {
 
   .more_deals_inside {
     font-size: 24px;
-    padding-bottom: 15px;
+//    padding-bottom: 15px;
 //    border-top: 1px solid black;
   }
 }
@@ -488,4 +491,10 @@ footer {
 
   background-color: #fff;
   color: $light-gray;
+}
+
+@media #{$large-only} {
+  .product-box {
+    min-height: 300px;
+  }
 }

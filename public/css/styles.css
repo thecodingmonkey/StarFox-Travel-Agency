@@ -27,16 +27,16 @@ meta.foundation-mq-large-only {
   width: 961px; }
 
 meta.foundation-mq-xlarge {
-  font-family: "/only screen and (min-width:90.063em)/";
-  width: 90.063em; }
+  font-family: "/only screen and (min-width:9999990.063em)/";
+  width: 9999990.063em; }
 
 meta.foundation-mq-xlarge-only {
-  font-family: "/only screen and (min-width:90.063em) and (max-width:120em)/";
-  width: 90.063em; }
+  font-family: "/only screen and (min-width:9999990.063em) and (max-width:9999991em)/";
+  width: 9999990.063em; }
 
 meta.foundation-mq-xxlarge {
-  font-family: "/only screen and (min-width:120.063em)/";
-  width: 120.063em; }
+  font-family: "/only screen and (min-width:9999992.063em)/";
+  width: 9999992.063em; }
 
 meta.foundation-data-attribute-namespace {
   font-family: false; }
@@ -1988,7 +1988,7 @@ meta.foundation-mq-topbar {
     display: table-cell !important; } }
 
 /* xlarge displays */
-@media only screen and (min-width:90.063em) {
+@media only screen and (min-width:9999990.063em) {
   .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .hide-for-large-only, .show-for-large-up, .hide-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
     display: inherit !important; }
   .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .show-for-large-only, .hide-for-large-up, .show-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .hide-for-xxlarge-down {
@@ -2017,7 +2017,7 @@ meta.foundation-mq-topbar {
     display: table-cell !important; } }
 
 /* xxlarge displays */
-@media only screen and (min-width:120.063em) {
+@media only screen and (min-width:9999992.063em) {
   .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .hide-for-large-only, .show-for-large-up, .hide-for-large, .hide-for-large-down, .hide-for-xlarge-only, .show-for-xlarge-up, .hide-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .show-for-xxlarge-down {
     display: inherit !important; }
   .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .show-for-large-only, .hide-for-large-up, .show-for-large, .show-for-large-down, .show-for-xlarge-only, .hide-for-xlarge-up, .show-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .hide-for-xxlarge-down {
@@ -2395,13 +2395,13 @@ slogan .more_info {
   margin-left: 0;
   margin-right: 0; }
 
-div.product.columns:first-child {
-  padding-left: 0;
-  padding-right: 30px; }
-
-div.sub_product {
-  padding-left: 30px;
-  padding-right: 0; }
+@media only screen and (min-width:961px) {
+  div.product.columns:first-child {
+    padding-left: 0;
+    padding-right: 30px; }
+  div.sub_product {
+    padding-left: 30px;
+    padding-right: 0; } }
 
 .row .product {
   padding-top: 60px;
@@ -2519,8 +2519,7 @@ div.sub_product {
   .sub_product p:hover {
     background-color: #343434; }
   .sub_product .more_deals_inside {
-    font-size: 24px;
-    padding-bottom: 15px; }
+    font-size: 24px; }
 
 footer {
   padding-top: 20px;
@@ -2544,3 +2543,7 @@ footer {
     padding-left: 20%;
     padding-right: 20%;
     background-color: #262626; }
+
+@media only screen and (min-width:961px) {
+  .product-box {
+    min-height: 300px; } }
