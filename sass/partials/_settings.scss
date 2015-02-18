@@ -154,9 +154,9 @@ $include-html-global-classes: $include-html-classes;
 // d. Media Query Ranges
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $small-range: (0em, 40em);
-// $medium-range: (40.063em, 64em);
-// $large-range: (64.063em, 90em);
+$small-range: (0em, 640px);
+$medium-range: (641px, 960px);
+$large-range: (961px, 9999990em);
 // $xlarge-range: (90.063em, 120em);
 // $xxlarge-range: (120.063em, 99999999em);
 
@@ -1387,14 +1387,14 @@ $include-html-global-classes: $include-html-classes;
 
 // Height and margin
  $topbar-height: rem-calc(65);
- $topbar-margin-bottom: 50;
+ $topbar-margin-bottom: 50px;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: $font-weight-normal;
-// $topbar-title-font-size: rem-calc(17);
+ $topbar-title-font-size: rem-calc(24);
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: $white;
+ $topbar-link-color: $light-teal;
 // $topbar-link-color-hover: $white;
 // $topbar-link-color-active: $white;
 // $topbar-link-color-active-hover: $white;
@@ -1421,7 +1421,7 @@ $include-html-global-classes: $include-html-classes;
 // $topbar-dropdown-link-bg: $oil;
 // $topbar-dropdown-link-bg-hover: $oil;
 // $topbar-dropdown-link-weight: $font-weight-normal;
-// $topbar-dropdown-toggle-size: 5px;
+$topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: $white;
 // $topbar-dropdown-toggle-alpha: 0.4;
 
@@ -1451,8 +1451,8 @@ $include-html-global-classes: $include-html-classes;
 // $topbar-input-height: rem-calc(28);
 
 // Divider Styles
-// $topbar-divider-border-bottom: solid 1px scale-color($topbar-bg-color, $lightness: 13%);
-// $topbar-divider-border-top: solid 1px scale-color($topbar-bg-color, $lightness: -50%);
+$topbar-divider-border-bottom: solid 1px scale-color($light-teal, $lightness: 13%);
+$topbar-divider-border-top: solid 1px scale-color($light-teal, $lightness: -50%);
 
 // Sticky Class
 // $topbar-sticky-class: ".sticky";
