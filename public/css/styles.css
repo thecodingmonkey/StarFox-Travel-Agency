@@ -2240,6 +2240,8 @@ th.hide-for-touch {
 
 .top-bar section.top-bar-section, .top-bar section.top-bar-section {
   text-align: left; }
+  .top-bar section.top-bar-section li, .top-bar section.top-bar-section li {
+    border-top: 1px solid #8EC1C1; }
   .top-bar section.top-bar-section a, .top-bar section.top-bar-section a {
     text-decoration: none; }
 

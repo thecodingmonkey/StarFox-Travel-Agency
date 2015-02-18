@@ -49,15 +49,17 @@ $radius-button-width : 95%;
 //   }
 
   section.top-bar-section {
-//     li {
-      text-align: left;
+    li {
+      border-top: 1px solid $light-teal;
+    }
+    text-align: left;
 //       padding-left: 20px;
-      a {
-        text-decoration: none;
+    a {
+      text-decoration: none;
 //         font-size: 24px;
 //         font-weight: lighter;
-        // color: $light-teal
-      }
+      // color: $light-teal
+    }
 //     }
   }
 }
