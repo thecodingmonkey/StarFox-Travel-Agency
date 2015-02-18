@@ -2,8 +2,8 @@
 
 $small-only: "only screen and (max-width:640px)";
 $medium-down: "only screen and (max-width:960px)";
-$medium-only: "only screen and (min-width:640px) and (max-width: 960px)";
-$medium-up: "only screen and (min-width: 640px)";
+$medium-only: "only screen and (min-width:641px) and (max-width: 960px)";
+$medium-up: "only screen and (min-width: 641px)";
 $large-only: "only screen and (min-width:961px)";
 
 $dark-gray : #262626;
@@ -13,11 +13,16 @@ $lightest-gray: #636363;
 
 $light-teal : #8EC1C1; 
 
-$radius-button-width : 95%;
-
 @import 'partials/settings';
 @import 'partials/foundation';
 
+.no-left-margin {
+  margin-left: 0;
+}
+
+.no-right-margin {
+  margin-left: 0;
+}
 
 // only applies to small size
 // .top-bar.expanded .title-area {
@@ -224,15 +229,14 @@ slogan {
     }
   }
 
+  .slogan_box {
+    // margin-right: 30px;
+    // margin-left: 30px;
     background-color: $light-teal;
     border-radius: 5px;
-
-  .slogan {
     text-align: center;
     font-size: 28px;
     font-weight: 200;
-//    padding-left: 65px;
-//    padding-right: 65px;
     span {
       font-weight: 600;
     }
@@ -275,6 +279,16 @@ slogan {
   margin-right: 0;
 }
 
+div.product.columns:first-child {
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+div.sub_product {
+  padding-left: 30px;
+  padding-right: 0;
+}
+
 .row .product {
   padding-top: 60px;
   background-color: white;
@@ -299,8 +313,10 @@ slogan {
 
     .product_med_rightcol {
       padding-left: 20px;
-      border-left: 2px $lightest-gray groove;
-      border-color: $lightest-gray;
+      @media #{$medium-only} {
+        border-left: 2px $lightest-gray groove;
+        border-color: $lightest-gray;
+      }
       padding-top: 20px;
       margin-top: 0;
     }
@@ -377,8 +393,11 @@ slogan {
 
 .sub_product {
   padding-top: 60px;
-  padding-left: 0;
-  padding-right: 0;
+
+  @media #{$medium-down} {
+    padding-left: 0;
+    padding-right: 0;
+  }
 //  width: 100%;
 
   .sub-deal {
