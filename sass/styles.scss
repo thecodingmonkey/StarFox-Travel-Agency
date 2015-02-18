@@ -12,6 +12,7 @@ $large-only: "only screen and (min-width:961px)";
 $dark-gray : #262626;
 $medium-gray : #343434;
 $light-gray : #535353;
+$lightest-gray: #636363;
 
 $light-teal : #8EC1C1;
 
@@ -241,30 +242,37 @@ slogan {
     padding-right: 60px;
   }
 
-  @media #{$medium-only} {
+//  @media #{$medium-only} {
     .product_med_leftcol, .product_med_rightcol {
+      width: 100%;
+      height: 100%;
       margin-top: 20px;
       box-sizing: border-box;
       vertical-align: middle;
     }
-  }
 
-  .radius.button {
-    width: $radius-button-width;
+    .product_med_leftcol {
+      text-align: center;
+    }
+//  }
 
-    border-radius: 5px;
+  .product-box {
+//    width: $radius-button-width;
+
+    border-radius: 6px;
     background-color: $light-gray;
     margin-left: 0;
     margin-right: 0;
   }
 
-  .radius.button:hover {
+  .product-box:hover {
     background-color: $medium-gray;
   }
 
   .product_title {
     width: 100%;
-    border-bottom: 1px #434343 solid;
+    border-bottom: 2px $lightest-gray groove;
+    border-color: $lightest-gray;
     @media #{$medium-only} {
       border-bottom: 0px;
     }
@@ -275,29 +283,37 @@ slogan {
     font-size: 24px;
     font-weight: 700;
     text-align: center;
+//    border-bottom: 1px solid black;
     @media #{$medium-only} {
       text-align: left;
     }
   }
 
   h3 {
-    display: inline;
+    display: inline-block;
     color: white;
     font-size: 60px;
-    font-weight: 200;
+    font-weight: lighter;
     text-align: center;
-    border-bottom: 8px solid white;
+    border-bottom: 10px solid white;
     padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   p {
-    padding-top: 50px;
-    padding-left: 25%;
-    padding-right: 25%;
+//    padding-top: 50px;
+    padding-left: 20%;
+    padding-right: 20%;
 
     @media #{$large-only} {
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    @media #{$small-only} {
+      text-align: center;
+      padding-left: 10%;
+      padding-right: 10%;
     }
     color: white; 
 
@@ -311,19 +327,24 @@ slogan {
 
 .sub_product {
   padding-top: 60px;
-  margin-bottom: 20px;
   padding-left: 0;
   padding-right: 0;
+//  width: 100%;
 
-
-  .radius.button {
-    width: $radius-button-width;
-    border-radius: 5px;
-    background-color: $light-gray;
+  .sub-deal {
+    border-bottom: 2px $lightest-gray groove;
+    border-color: $lightest-gray;
   }
 
-  .radius.button:hover {
-    background-color: $dark-gray;
+  .product-box {
+//    width: $radius-button-width;
+    border-radius: 5px;
+    background-color: $light-gray;
+    text-align: center;
+  }
+
+  .product-box:hover {
+    background-color: $medium-gray;
   }
 
   h2 {
@@ -331,27 +352,34 @@ slogan {
     font-size: 20px;
     font-weight: 700;
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   h3 {
-    display: inline;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
     color: white;
     font-size: 30px;
     font-weight: 200;
     text-align: center;
-    border-bottom: 4px solid white;
     padding-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
   }
 
   p {
-    padding-top: 20px;
+//    padding-top: 20px;
+    padding-bottom: 5px;
     color: white; 
   }
 
   .more_deals_inside {
     font-size: 24px;
+//    border-top: 1px solid black;
   }
 }
 
@@ -364,6 +392,7 @@ footer {
 
   .more_deals {
     background-color: $light-teal;
+    margin-top: 25px;
     padding-bottom: 5px;
     color: white;
     font-size: 24px;
