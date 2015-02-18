@@ -197,9 +197,12 @@ nav {
 .slogan_ufo2 {
   @extend .slogan_ufo;
 
-  height: 100px;
-  width: 160px;
-  background-size: 160px 160px;
+  margin-top: -50px;
+  // margin-bottom: 50px;
+
+  height: 200px;
+  width: 300px;
+  background-size: 300px 300px;
 }
 
 slogan {
@@ -220,9 +223,10 @@ slogan {
   }
 
   .more_info {
+    width: 90%;
     background-color: $light-gray;
     text-align: center;
-    margin: 0 60px 30px 60px;
+    margin: 0 60px 30px 0px;
     padding-top: 20px;
     padding-bottom: 20px;
     color: white;
@@ -231,6 +235,10 @@ slogan {
     box-shadow: 0 5px 1px #262626;
   }
 
+}
+
+.row:nth-child(1) {
+  max-width: none;
 }
 
 .row .product {
